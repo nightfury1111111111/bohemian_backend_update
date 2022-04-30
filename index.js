@@ -20,10 +20,10 @@ app.post('/update', (req, res) => {
     // const mint = new Mint({ mintAddr: req.body.mintAddr });
     // mint.save().then((a) => console.log('db :', a));
 });
-
+const PORT = process.env.PORT || 8008
 // app.get('/get');
 
-var server = app.listen(8008, function () {
+var server = app.listen(PORT, function () {
     var host = server.address().address;
     var port = server.address().port;
 
