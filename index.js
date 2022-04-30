@@ -14,9 +14,9 @@ const Mint = require('./schema/mint');
 const { updateMetaData } = require('./lib/index.js');
 
 app.post('/update', (req, res) => {
-    res.send('Hello World');
     // console.log(web3_js_1.Keypair.fromSecretKey(new Uint8Array(process.env.KEY_150.split(','))));
     updateMetaData(req.body.mintAddr);
+    res.send('Successfully updated');
     // const mint = new Mint({ mintAddr: req.body.mintAddr });
     // mint.save().then((a) => console.log('db :', a));
 });
