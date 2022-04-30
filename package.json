@@ -7,7 +7,7 @@
         "spl-metadata": "./lib/index.js"
     },
     "scripts": {
-        "start":"node index.js",
+        "start": "node index.js",
         "download-metadata": "ts-node --log-error ./src/index.ts download-metadata",
         "update": "ts-node --log-error ./src/index.ts update",
         "ts-node": "ts-node",
@@ -40,5 +40,8 @@
         "prettier": "^2.4.0",
         "ts-node": "^10.2.1",
         "typescript": "^4.4.3"
+    },
+    "engines": {
+        "node": "14.17.5"
     }
 }
