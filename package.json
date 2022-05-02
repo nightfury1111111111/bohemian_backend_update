@@ -8,8 +8,7 @@
     },
     "scripts": {
         "start": "node index.js",
-        "download-metadata": "ts-node --log-error ./src/index.ts download-metadata",
-        "update": "ts-node --log-error ./src/index.ts update",
+        "develop": "nodemon index.js",
         "ts-node": "ts-node",
         "lint": "eslint 'src/**/*.{js,ts}' --fix",
         "build": "tsc -p .",
@@ -28,7 +27,10 @@
         "cors": "^2.8.5",
         "dotenv": "^16.0.0",
         "express": "^4.18.0",
-        "mongoose": "^6.3.1"
+        "express-validator": "^6.14.0",
+        "mongoose": "^6.3.1",
+        "morgan": "^1.10.0",
+        "trim-request": "^1.0.6"
     },
     "devDependencies": {
         "@types/node": "^16.10.2",
